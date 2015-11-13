@@ -1,0 +1,12 @@
+<p> Escrito por <%= @monstruo.nombre %> </p>
+<p> Descripcion: <%= @monstruo.descripcion %> </p>
+<p> Tweets: 	
+	<table>
+	<tr>
+	<% @monstruo.tweets.each do |tweet| %>
+	<tr>
+	<td> <%= tweet.estado %> </td>
+	</tr>
+	<% end %>
+	</table> </p>
+
